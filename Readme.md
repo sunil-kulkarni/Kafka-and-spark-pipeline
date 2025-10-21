@@ -22,9 +22,7 @@ Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 | Condition | Alert |
 | --------- |------ |
 |avg(cpu_pct) > threshold AND avg(mem_pct) > threshold |“High CPU + Memory stress” |
-
 | avg(cpu_pct) >  threshold AND avg(mem_pct) ≤  threshold | “CPU spike suspected” |
-
 | avg(mem_pct) >  threshold AND avg(cpu_pct) ≤  threshold | “Memory saturation suspected” 
  
 
@@ -33,9 +31,7 @@ Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 | Condition | Alert |
 | --------- |------ |
 | max(net_in) >  threshold AND max(disk_io) > threshold | “Network flood + Disk thrash suspected” |
-
 | max(net_in) >  threshold AND max(disk_io) ≤  threshold | “Possible DDoS” |
-
 | max(disk_io) >  threshold AND max(net_in) ≤  threshold | “Disk thrash suspected” |
 
 ## Installation
