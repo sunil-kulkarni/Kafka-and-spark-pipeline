@@ -1,10 +1,10 @@
 ## Apache Kafka and Apache Spark Pipeline
 
-### This project demonstrates the use of Apache kafka and Apache spark for building a datastreaming pipeline
+ This project demonstrates the use of Apache kafka and Apache spark for building a datastreaming pipeline
 
-### How to run the setup:
 
-#### Part-1 Data streaming 
+
+### Part-1 Data streaming 
 
 To run this project we require four machines
 1) Producer - To stream the data
@@ -12,7 +12,7 @@ To run this project we require four machines
 3) Consumer-1 - Receives data from the broker and stores the relevant features in two different csv files.
 4) Consumer-2 - Just like Consumer-1, it is used for receiving a different set of features and then stores in two separate csv files.
 
-#### Part-2 Data manipulation
+### Part-2 Data manipulation
 
 Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 
