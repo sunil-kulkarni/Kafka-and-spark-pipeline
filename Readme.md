@@ -18,7 +18,7 @@ Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 
 
 
-##### Condition for sparkjob-1
+### Condition for sparkjob-1
 | Condition | Alert |
 | --------- |------ |
 |avg(cpu_pct) > threshold AND avg(mem_pct) > threshold |“High CPU + Memory stress” |
@@ -26,7 +26,7 @@ Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 | avg(mem_pct) >  threshold AND avg(cpu_pct) ≤  threshold | “Memory saturation suspected” 
  
 
-##### Conditions for sparkjob-2
+### Conditions for sparkjob-2
 
 | Condition | Alert |
 | --------- |------ |
