@@ -19,29 +19,24 @@ Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 
 
 ##### Condition for sparkjob-1
-Alert the user if
+| Condition | Alert |
+| --------- |------ |
+|avg(cpu_pct) > threshold AND avg(mem_pct) > threshold |“High CPU + Memory stress” |
 
-avg(cpu_pct) > threshold AND avg(mem_pct) > threshold
-“High CPU + Memory stress”
+| avg(cpu_pct) >  threshold AND avg(mem_pct) ≤  threshold | “CPU spike suspected” |
 
-avg(cpu_pct) >  threshold AND avg(mem_pct) ≤  threshold
-“CPU spike suspected”
+| avg(mem_pct) >  threshold AND avg(cpu_pct) ≤  threshold | “Memory saturation suspected” 
+ 
 
-avg(mem_pct) >  threshold AND avg(cpu_pct) ≤  threshold
-“Memory saturation suspected”
+##### Conditions for sparkjob-2
 
+| Condition | Alert |
+| --------- |------ |
+| max(net_in) >  threshold AND max(disk_io) > threshold | “Network flood + Disk thrash suspected” |
 
-##### Condition for sparkjob-2
-Alert the user if 
+| max(net_in) >  threshold AND max(disk_io) ≤  threshold | “Possible DDoS” |
 
-max(net_in) >  threshold AND max(disk_io) > threshold
-“Network flood + Disk thrash suspected”
-
-max(net_in) >  threshold AND max(disk_io) ≤  threshold
-“Possible DDoS”
-
-max(disk_io) >  threshold AND max(net_in) ≤  threshold
-“Disk thrash suspected”
+| max(disk_io) >  threshold AND max(net_in) ≤  threshold | “Disk thrash suspected” |
 
 ## Installation
 
