@@ -36,13 +36,33 @@ Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 
 ## Installation
 
-### For producer
+### For Producer
 ```bash
 pip install kafka-python
 sudo apt-get install -y libsnappy-dev
 pip install python-snappy
 ```
+### For Broker
+Install java jdk
+```bash
+sudo apt-get update
+sudo apt-get install -y openjdk-11-jdk
+```
+Extract kafka
 
+```bash
+wget https://downloads.apache.org/kafka/3.9.0/kafka_2.13-3.9.0.tgz
+tar -xzf kafka_2.13-3.9.0.tgz
+cd kafka_2.13-3.9.0
+```
 
+### For consumer
+```bash
+sudo apt-get install libsnappy-dev
+pip install python-snappy
+```
 
-
+### For running sparkjobs
+```bash
+pip install pyspark
+```
