@@ -14,6 +14,18 @@ To run this project we require four machines
 
 ### Part-2 Data manipulation
 
+This project uses JDK-17 to be compatible with spark
+
+Run the spark job with
+```bash
+spark-submit sparkjob1.py
+```
+and
+
+```bash
+spark-submit sparkjob2.py
+```
+
 Run the spark jobs and set the threshold values as mentioned in `thresholds.txt`
 
 
