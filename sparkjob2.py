@@ -74,7 +74,7 @@ final_df = alert_df.select(
 # Save output
 final_df.coalesce(1).write.mode('overwrite').option("header", "true").csv('./assets/team_25_NET_DISK.csv')
 
-print("Output saved to ./assets/team_25_NET_DISK.csv")
+print("Output saved to ./assets/NET_DISK.csv")
 print(f"Total rows generated: {final_df.count()}")
 final_df.show(5)
 
