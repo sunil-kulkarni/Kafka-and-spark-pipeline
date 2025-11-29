@@ -12,7 +12,7 @@ spark = SparkSession.builder \
     .master("local[*]") \
     .getOrCreate()
 
-# Read CSVs
+# Read the two CSV files
 net_df = spark.read.csv('./assets/net_data.csv', header=True, inferSchema=False)
 disk_df = spark.read.csv('./assets/disk_data.csv', header=True, inferSchema=False)
 
