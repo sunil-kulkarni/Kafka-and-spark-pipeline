@@ -1,0 +1,4 @@
+kafka-topics.sh --create --topic topic-cpu --bootstrap-server [BROKER IP AND PORT]
+kafka-topics.sh --create --topic topic-mem --bootstrap-server [BROKER IP AND PORT]
+kafka-topics.sh --create --topic topic-net --bootstrap-server [BROKER IP AND PORT]
+kafka-topics.sh --create --topic topic-disk --bootstrap-server [BROKER IP AND PORT]
